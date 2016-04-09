@@ -1,0 +1,47 @@
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  background-color: #1e1e1e;
+}
+
+header > .navbar{
+    margin-bottom: 0px;
+}
+
+.row{
+    margin: opx;
+}
+
+.row h1{
+    text-align: center;
+    color: white;
+}
+
+.col-md-6{
+    background-color: #333333;
+}
+
+.form-group{
+    margin-bottom: 50px;
+}
+
+.inline-group{
+    margin: 20px 0px 20px 0px;
+    float: right;
+}
+
+.list-group-item{
+    background-color: #333333;
+    border: none;
+}
+
+.list-group-item a{
+    background-color: #1e1e1e;
+    color: white;
+}
+
+h2.list-group-item{
+    color: #cb8056;
+}

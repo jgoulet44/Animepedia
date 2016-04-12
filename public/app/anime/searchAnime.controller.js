@@ -26,5 +26,16 @@ app.controller("SearchAnimeController", ["LoginService", "AnimeService", functio
         that.animes = resultat;
     }
 
+    this.sortByTitle = function() {
+        that.animes = that.animes.sort(function(animeA,animeB) {
+           return animeA.title_romaji.localeCompare(animeB.title_romaji);
+        })
+    }
+    
+    this.sortByScore = function() {
+        that.animes = that.animes.sort(function(animeB,animeA) {
+           return  parseInt(animeA.average_score) - (parseInt(animeB.average_score));
+        })
+    }
 }]
 );

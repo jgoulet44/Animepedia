@@ -10,7 +10,7 @@
 
 <body ng-app="animepedia">
 
-    <header>
+    <header class="fixed-div">
 
         <nav class="navbar navbar-default" role="navigation">
             <div class="navbar-header">
@@ -33,15 +33,15 @@
 
     </header>
 
-    <div class="container-full">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 left-column">
                 <h1>Zone 1</h1>
             </div>
 
-            <div class="col-md-6" ui-view></div>
+            <div class="col-md-6 center-column" ui-view></div>
 
-            <div class="col-md-3 ">
+            <div class="col-md-3 right-column">
                 <h1>Zone 3</h1>
             </div>
 
@@ -53,13 +53,14 @@
     <script src="./bower_components/angular-bootstrap/ui-bootstrap.js"></script>
     <script src="./bower_components/angular-resource/angular-resource.js"></script>
     <script src="./bower_components/lodash/lodash.js"></script>
+    <script src="./bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="app/app.js"></script>
     <script src="app/tests/test.controller.js"></script>
     <script src="app/anime/searchAnime.controller.js"></script>
+    <script src="app/anime/anime.controller.js"></script>
     <script src="app/authentification/login.service.js"></script>
     <script src="app/anime/anime.service.js"></script>
     <script src="app/anime/animeItem.directive.js"></script>
-    <script src="app/anime/anime.filter.js"></script>
 
 
 </body>

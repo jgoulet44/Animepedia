@@ -1,2 +1,3 @@
 <h2>{{ animeController.anime.title_romaji }}</h2>
 <p ng-bind-html="animeController.anime.description"></p>
+<p ng-repeat="genre in animeController.anime.genres">{{genre}}</p>

@@ -1,4 +1,4 @@
-app.controller("SearchAnimeController", ["LoginService", "AnimeService", function(LoginService, AnimeService) {
+app.controller("SearchAnimeController", ["AnimeService", function(AnimeService) {
 
     this.query = "naruto";
     this.sortProperty = null;

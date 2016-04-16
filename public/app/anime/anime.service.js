@@ -1,5 +1,5 @@
 app.factory("AnimeService", ["$resource", "TokenService", function ($resource, tokenService) {
-    var resource = $resource(null, { access_token: tokenService.get() }, {
+    var resource = $resource(null, null, {
         'search': {
             method: 'GET', url: 'http://anilist.co/api/anime/search/:query', isArray: true
         },

@@ -19,8 +19,8 @@ app.run(["LoginService", "TokenService", "$timeout", function(loginService, toke
             client_secret: "CV6NRqh0Fzsr5ARUhVKb3xywMMGg4d"
         }, function(data){
             tokenService.set(data);
+            $timeout(login,60000);
         });
     }
-    $timeout(login,60000);
     login();
 }]);

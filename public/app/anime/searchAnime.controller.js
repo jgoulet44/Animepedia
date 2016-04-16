@@ -21,7 +21,7 @@ app.controller("SearchAnimeController", ["LoginService", "AnimeService", functio
     
     this.sortByScore = function() {
         that.animes = that.animes.sort(function(animeB,animeA) {
-           return  parseInt(animeA.average_score) - (parseInt(animeB.average_score));
+           return  parseFloat(animeA.average_score) - (parseFloat(animeB.average_score));
         })
     }
 }]
